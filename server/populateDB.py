@@ -1,8 +1,9 @@
 #!/usr/bin/python
 
-from werkzeug.security import generate_password_hash
 from pymongo import MongoClient
+
 from pymongo.errors import DuplicateKeyError
+from werkzeug.security import generate_password_hash
 
 
 def main():

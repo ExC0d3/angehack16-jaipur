@@ -1,6 +1,7 @@
-from app import app, lm
 from flask import request, redirect, render_template, url_for, flash
 from flask.ext.login import login_user, logout_user, login_required
+
+from app import app, lm
 from .forms import LoginForm
 from .user import User
 
@@ -14,7 +15,8 @@ def home():
 def login():
     form = LoginForm()
     if request.method == 'POST' and form.validate_on_submit():
-        user = app.config['USERS_COLLECTION'].find_one({"_id": form.username.data})
+        user = app.config['USERS_COLLECTION'].find_one(
+            {"_id": form.username.data})
         if user and User.validate_login(user['password'], form.password.data):
             user_obj = User(user['_id'])
             login_user(user_obj)
