@@ -1,6 +1,7 @@
 'use strict';
 
 import {mailgun, mailDetails} from '../services/email';
+import {client} from '../services/sms';
 var express = require('express');
 var router = express.Router();
 
@@ -27,6 +28,27 @@ router.get('/promote/email',(req,res,next) => {
 			reason:err
 		});
 	}) 
+});
+
+router.get('/promote/sms',(req,res,next) => {
+	///TODO - user details from query parameters
+
+	client.sendMessage({
+		to:'+919910089606',
+		from:'+14136422080',
+		body:'Hello from a friend'
+	}, (err, data) => {
+		if (err)
+			res.send({
+				result:'fail',
+				reasons:err
+			});
+		else
+			res.send({
+				result:'success',
+				reason:null
+			});
+	});
 });
 
 module.exports = router;
