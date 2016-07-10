@@ -112,7 +112,9 @@ router.get('/user/plot/bar',(req,res,next)=>{
 	});
 });
 
-router.get()
+router.get('/user/plot/scatter', (req,res,next) => {
+	
+});
 
 module.exports = router;
 
