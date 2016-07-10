@@ -39,9 +39,27 @@ def dashboard():
 
 
 @app.route('/profile', methods=['GET', 'POST'])
-@login_required
+# @login_required
 def profile():
-    return render_template('profile.html')
+    return render_template('profile_edit.html')
+
+
+@app.route('/profile/mariah', methods=['GET', 'POST'])
+# @login_required
+def mariah():
+    return render_template('mariah.html')
+
+
+@app.route('/profile/sarah', methods=['GET', 'POST'])
+# @login_required
+def sarah():
+    return render_template('sarah.html')
+
+
+@app.route('/profile/ben', methods=['GET', 'POST'])
+# @login_required
+def ben():
+    return render_template('ben.html')
 
 
 @app.route('/campaign', methods=['GET', 'POST'])
