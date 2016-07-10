@@ -8,7 +8,7 @@ from .user import User
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -32,16 +32,22 @@ def logout():
     return redirect(url_for('login'))
 
 
-@app.route('/write', methods=['GET', 'POST'])
+@app.route('/dashboard', methods=['GET', 'POST'])
 @login_required
-def write():
-    return render_template('write.html')
+def dashboard():
+    return render_template('dashboard.html')
 
 
-@app.route('/settings', methods=['GET', 'POST'])
+@app.route('/profile', methods=['GET', 'POST'])
 @login_required
-def settings():
-    return render_template('settings.html')
+def profile():
+    return render_template('profile.html')
+
+
+@app.route('/campaign', methods=['GET', 'POST'])
+@login_required
+def campaign():
+    return render_template('campaigns.html')
 
 
 @lm.user_loader

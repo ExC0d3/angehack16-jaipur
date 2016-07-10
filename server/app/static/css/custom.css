@@ -1,0 +1,150 @@
+
+.hero-text {
+    font-family: AvenirNext-Regular;
+    font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: -1.67px;
+    line-height: 90px;
+}
+
+.sub_text {
+    font-family: AvenirNext-Medium;
+    font-size: 24px;
+    color: #83909C;
+    letter-spacing: 1.2px;
+    line-height: 24px;
+}
+
+.btn.btn--primary {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.btn.btn--primary:hover {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.btn--primary,
+.btn--primary:visited {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.btn--primary:hover {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.btn.btn-primary {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.btn.btn-primary:hover {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.btn-primary,
+.btn-primary:visited {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.btn-primary:hover {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.btn {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.btn:hover {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.button:hover {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.button-hover {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.button-hover:hover {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.features {
+    padding-top: 150px;
+}
+
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-content {
+    background-color: #F8F8F8;
+}
+
+.modal-title {
+    text-align: center;
+}
+
+.custom_textarea {
+    border-radius: 26px;
+}
+
+.checkmark_custom {
+    margin: auto;
+    height: 120px;
+    padding: 30px;
+}
+
+.btn.btn-primary:hover {
+    border-color: #26B2C3;
+    background: #26B2C3;
+}
+
+.modal_close {
+    color: #26B2C3;
+    padding-right: 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+    cursor: pointer;
+}
+
+.nav-bar.nav--absolute {
+    border-bottom: none;
+}
+
+.nav-bar {
+    padding-right: 0;
+    box-shadow: none;
+}
+
+.errortext {
+    color: #b92b27;
+}
