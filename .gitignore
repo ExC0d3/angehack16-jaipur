@@ -93,3 +93,7 @@ ENV/
 # Node
 
 API/node_modules
+
+# Data dumps
+
+data dumps
