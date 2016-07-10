@@ -55,7 +55,7 @@ router.get('/promote/sms',(req,res,next) => {
 	});
 });
 
-router.get('/plot/user',(req,res,next)=>{
+router.get('/user/plot/bar',(req,res,next)=>{
 	next();
 },(req,res,next)=>{
 	var file = path.resolve('data dumps','campaign_data.json');
@@ -111,6 +111,8 @@ router.get('/plot/user',(req,res,next)=>{
 			
 	});
 });
+
+router.get()
 
 module.exports = router;
 
