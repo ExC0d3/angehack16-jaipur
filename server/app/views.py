@@ -21,7 +21,7 @@ def login():
             user_obj = User(user['_id'])
             login_user(user_obj)
             flash("Logged in successfully!", category='success')
-            return redirect(request.args.get("next") or url_for("write"))
+            return redirect(request.args.get("next") or url_for("profile"))
         flash("Wrong username or password!", category='error')
     return render_template('login.html', title='login', form=form)
 
@@ -29,7 +29,7 @@ def login():
 @app.route('/logout')
 def logout():
     logout_user()
-    return redirect(url_for('login'))
+    return render_template('index.html')
 
 
 @app.route('/dashboard', methods=['GET', 'POST'])
