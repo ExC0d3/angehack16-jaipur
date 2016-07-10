@@ -33,13 +33,13 @@ def logout():
 
 
 @app.route('/dashboard', methods=['GET', 'POST'])
-@login_required
+# @login_required
 def dashboard():
     return render_template('dashboard.html')
 
 
 @app.route('/profile', methods=['GET', 'POST'])
-# @login_required
+@login_required
 def profile():
     return render_template('profile_edit.html')
 
