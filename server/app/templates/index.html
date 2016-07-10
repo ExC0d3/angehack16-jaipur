@@ -3,12 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Scale - API For Human Labor</title>
+    <title>supportiq</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='')}}"> -->
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/iconsmind.css')}}" , media='all'>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/interface-icons.css')}}" , media="all">
+    <link href="{{url_for('static', filename='css/iconsmind.css')}}" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" <link href="{{url_for('static', filename='css/interface-icons.css')}}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{url_for('static', filename='css/owl.carousel.css')}}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{url_for('static', filename='css/theme.css')}}" rel="stylesheet" type="text/css" media="all" />
     <link href="{{url_for('static', filename='css/custom.css')}}" rel="stylesheet" type="text/css" media="all" />
@@ -16,94 +14,27 @@
 </head>
 
 <body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)">
-    <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content" id="formModalContent">
-                <form class="form--no-labels" action="createsend.com" method="post" id="subForm" data-error="Please fill all fields correctly." data-success="Thanks for signing up! Please check your inbox for confirmation email.">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Contact Us</h4>
-                        <div class="modal-title">
-                        <div class="modal-title">
-                            Please tell us a little about what you're working on.
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="input-with-icon">
-                            <label for="fieldName">Your Name</label>
-                            <br>
-                            <i class="icon icon-Male-2"></i>
-                            <input id="fieldName" name="name" type="text">
-                        </div>
-                        <div class="input-with-icon">
-                            <label for="fieldEmail">Email Address</label>
-                            <br>
-                            <i class="icon icon-Mail-2"></i>
-                            <input class="validate-required validate-email" id="fieldEmail" name="email" type="email" required="">
-                        </div>
-                        <div class="input-with-icon">
-                            <label for="fieldWebsite">Company Website</label>
-                            <br>
-                            <i class="icon icon-Internet-2"></i>
-                            <input class="validate-required validate-email" id="fieldWebsite" name="website" type="text" required="">
-                        </div>
-                        <textarea class="validate-required custom_textarea" name="description" placeholder="Tell us about how you'd like to use Scale." rows="3"></textarea>
-                        <div class="errortext hidden" id="errorText">Something went wrong. Please try again.</div>
-                    </div>
-                    <div class="modal-footer">
-                        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-                        <a data-dismiss="modal" class="modal_close">Close</a>
-                        <a class="btn btn--primary vpe" id="submitForm">
-                            <span class="btn__text">
-                                    Submit
-                                </span>
-                        </a>
-                        <!-- <button type="button" class="btn btn-primary" id="submitForm">Submit</button> -->
-                    </div>
-                </form>
-            </div>
-            <!-- /.modal-content -->
-            <div class="modal-content" id="successModalContent" style="display:none;">
-                <div class="modal-body" style="text-align:center;">
-                    <img class="checkmark_custom" src="/img/checkmark.png" />
-                    <div class="thanks_success">
-                        Thanks! We'll be in touch 😊
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-                    <a class="btn btn--primary vpe" data-dismiss="modal">
-                        <span class="btn__text">
-                                    Close
-                                </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
     <div class="nav-container">
         <nav>
             <div class="nav-bar nav--absolute nav--transparent" data-fixed-at="700">
                 <div class="nav-module logo-module left">
-                    <a href="#"><img alt="logo" class="logo logo-dark" src="/img/logo-dark.png"> <img alt="logo" class="logo logo-light" src="/img/logo-dark.png"></a>
+                    <a href="#"><img alt="logo" class="logo logo-dark" src="{{url_for('static', filename='img/logo.png')}}"> <img alt="logo" class="logo logo-light" src="{{url_for('static', filename='img/logo.png')}}"></a>
                 </div>
                 <div class="nav-module menu-module left">
                     <ul class="menu">
                         <li class="vpe">
-                            <a href="https://api.scaleapi.com/login" target="_blank">Login</a>
+                            <a href="" target="_blank">Login</a>
                         </li>
                         <li class="vpe">
-                            <a href="https://api.scaleapi.com/signup" target="_blank">Sign up</a>
+                            <a href="" target="_blank">Sign up</a>
                         </li>
                         <li class="vpe">
-                            <a href="https://docs.scaleapi.com" target="_blank">Docs</a>
+                            <a href="" target="_blank">Docs</a>
                         </li>
                     </ul>
                 </div>
                 <div class="nav-module menu-module right" style="padding-right: 20px;">
-                    <a class="btn btn--primary vpe" href="tel:413-497-2253" style="color: white;">Call (413) 497-2253</a>
+                    <a class="btn btn--primary vpe" href="" style="color: white;">Contact Us</a>
                 </div>
             </div>
             <!-- <div class="nav-mobile-toggle visible-sm visible-xs">
@@ -114,21 +45,21 @@
     <div class="main-container">
         <section class="height-100 imagebg" data-overlay="0">
             <div class="background-image-holder">
-                <img alt="image" src="/img/laborbg.png">
+                <img alt="image" src="{{url_for('static', filename='img/laborbg.png')}}">
             </div>
             <div class="container pos-vertical-center">
                 <div class="row">
-                    <div class="col-md-7 col-sm-8">
-                        <h1 style="color:#51555C;">API for Human Labor.</h1>
+                    <div class="col-md-11 col-sm-11">
+                        <h3 style="color:#51555C;">Intelligent Supporter Management System and Fundraising platform for modern Non-profits</h3>
                         <p>
-                            <div class="sub_text">Get human tasks done with just one line of code.</div>
+                            <div class="sub_text">Get maximum engagement out of your users</div>
                         </p>
-                        <a class="btn btn--primary vpe" href="https://api.scaleapi.com/signup" target="_blank">
+                        <a class="btn btn--primary vpe" href="" target="_blank">
                             <span class="btn__text">
                                     Sign up now
                                 </span>
                         </a>
-                        <a class="btn btn--primary vpe" target="_blank" href="https://docs.scaleapi.com/">
+                        <a class="btn btn--primary vpe" target="_blank" href="">
                             <span class="btn__text">
                                     Read the docs
                                 </span>
@@ -188,7 +119,7 @@
                         <div class="feature boxed feature-1 text-center">
                             <i class="icon icon-Idea"></i>
                             <h5>Literally Anything Else</h5>
-                            <p>We love working with developers and startups to bring their applications to life. <a href="/cdn-cgi/l/email-protection#c3aba6afafac83b0a0a2afa6a2b3aaeda0acaefc90b6a1a9a6a0b7fe80acadb7a2a0b7e6f1f390a0a2afa6">Contact us</a>!</p>
+                            <p>We love working with developers and startups to bring their applications to life. <a href="/cdn-cgi/l/email-protection#fe969b929291be8d9d9f929b9f8e97d09d9193c1ad8b9c949b9d8ac3bd91908a9f9d8adbcccead9d9f929b">Contact us</a>!</p>
                         </div>
                     </div>
                 </div>
@@ -206,7 +137,7 @@
                 </div>
             </div>
             <div class="container">
-                <img src="/img/diagram2.png" />
+                <img src="{{url_for('static', filename='img/diagram2.png')}}" />
             </div>
         </section>
         <section class="features features-10">
@@ -246,7 +177,7 @@
                             </div>
                             <hr>
                             <p>10 Requests For Free</p>
-                            <a class="btn btn--primary vpe" href="https://api.scaleapi.com/signup" target="_blank">
+                            <a class="btn btn--primary vpe" href="" target="_blank">
                                 <span class="btn__text">
                                         SIGN UP NOW</span>
                             </a>
@@ -262,7 +193,7 @@
                             </div>
                             <hr>
                             <p>$0.50 per request. Up to 1000 requests per month.</p>
-                            <a class="btn btn--primary vpe" href="https://api.scaleapi.com/signup" target="_blank">
+                            <a class="btn btn--primary vpe" href="" target="_blank">
                                 <span class="btn__text">
                                         SIGN UP NOW</span>
                             </a>
@@ -278,8 +209,7 @@
                             <hr>
                             <p>Contact us for up to 10x cheaper and custom endpoints.</p>
                             <a class="btn btn--primary vpe" href="#" data-toggle="modal" data-target="#myModal">
-                                <span class="btn__text">
-                                        CONTACT US</span>
+                                <span class="btn__text">CONTACT US</span>
                             </a>
                         </div>
                     </div>
@@ -298,12 +228,12 @@
                 <div class="row text-center">
                     <div class="col-sm-12">
                         <div class="row">
-                            <a class="btn btn--primary vpe" href="https://api.scaleapi.com/signup" target="_blank">
+                            <a class="btn btn--primary vpe" href="" target="_blank">
                                 <span class="btn__text">
                         Sign up now
                     </span>
                             </a>
-                            <a class="btn btn--primary vpe" target="_blank" href="https://docs.scaleapi.com/">
+                            <a class="btn btn--primary vpe" target="_blank" href="">
                                 <span class="btn__text">
                         Read the docs
                     </span>
@@ -314,7 +244,6 @@
             </div>
         </section>
     </div>
-    <!-- <script src="{{url_for('static', filename='')}}"></script> -->
     <script src="{{url_for('static', filename='js/jquery-2.1.4.min.js')}}"></script>
     <script src="{{url_for('static', filename='js/scrollreveal.min.js')}}"></script>
     <script src="{{url_for('static', filename='js/parallax.js')}}"></script>
