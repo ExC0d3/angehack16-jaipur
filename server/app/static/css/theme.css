@@ -95,7 +95,7 @@ h6,
 .h6 {
   font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
   color: #343434;
-  font-weight: 600;
+  font-weight: 100;
   font-variant-ligatures: common-ligatures;
   margin-top: 0;
   margin-bottom: 0;
@@ -1060,7 +1060,7 @@ a {
 }
 .btn--primary .btn__text,
 .btn--primary:visited .btn__text {
-  color: #fff;
+  color: #000;
 }
 .btn--primary .btn__text i,
 .btn--primary:visited .btn__text i {
