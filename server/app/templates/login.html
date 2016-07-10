@@ -1,28 +1,27 @@
 {% extends "login_base.html" %} {% block content %}
 <div class="wrapper">
-    
-<form action="" method="POST" name="form" class="login">
-    <div class="col-md-4 col-md-offset-4">
-        {{ form.hidden_tag() }}
-        <div class="form-group">
-            <label class="control-label title" for="username">Username</label>
-            {# <input type="text" placeholder="Username" value='' autofocus/> #}
-            {{ form.username }}
-            <i class="fa fa-user"></i>            
+    <form action="" method="POST" name="form" class="login">
+        <div class="col-md-4 col-md-offset-4">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                <label class="control-label title" for="username">Username</label>
+                <!-- <input type="text" placeholder="Username" value='' autofocus/> -->
+                {{ form.username }}
+                <i class="fa fa-user"></i>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="password">Password</label>
+                <!-- <input type="password" placeholder="Password" value='' /> -->
+                {{ form.password }}
+                <i class="fa fa-key"></i>
+                <a href="#">Forgot your password?</a>
+                <button type="submit">
+                    <i class="spinner"></i>
+                    <span class="state">Log in</span>
+                </button>
+            </div>
+            <button class="btn btn-default" type="submit">Submit</button>
         </div>
-        <div class="form-group">
-            <label class="control-label" for="password">Password</label>
-{#             <input type="password" placeholder="Password" value=''/>
- #}            {{ form.password }}
-            <i class="fa fa-key"></i>
-            <a href="#">Forgot your password?</a>
-            <button type="submit">
-                <i class="spinner"></i>
-                <span class="state">Log in</span>
-            </button>
-        </div>
-        {# <button class="btn btn-default" type="submit">Submit</button> #}
-    </div>
-</form>
+    </form>
 </div>
 {% endblock %}
